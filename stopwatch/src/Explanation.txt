@@ -1,0 +1,83 @@
+1. State Variables
+
+const [running, setRunning] = useState(false);
+const [elapsedTime, setElapsedtime] = useState(0);
+
+running: Tracks whether the stopwatch is running (true) or paused (false).
+elapsedTime: Stores the total elapsed time in milliseconds.
+
+
+2. References with useRef
+
+
+const intervalIdRef = useRef(null);
+const startTimeRef = useRef(0);
+
+
+intervalIdRef:
+Holds the setInterval ID, allowing it to be cleared when the stopwatch stops or resets.
+startTimeRef:
+Stores the timestamp when the stopwatch was last started, adjusted for any previously elapsed time.
+
+
+
+useEffect(() => {
+    if (running) {
+        intervalIdRef.current = setInterval(() => {
+            setElapsedtime(Date.now() - startTimeRef.current);
+        }, 10);
+    }
+    return () => {
+        clearInterval(intervalIdRef.current); // Clears the interval when `running` changes or component unmounts
+    };
+}, [running]);
+
+
+When running is true:
+A setInterval is created to repeatedly calculate the elapsed time.
+The interval updates elapsedTime every 10ms.
+When running is false or the component unmounts:
+The interval is cleared using clearInterval.
+
+
+4. Event Handlers
+These functions control the stopwatch behavior.
+
+Start
+
+function start() {
+    setRunning(true);
+    startTimeRef.current = Date.now() - elapsedTime;
+}
+
+
+Sets running to true, starting the stopwatch.
+Updates startTimeRef to account for previously elapsed time, ensuring the stopwatch resumes from where it was paused.
+
+Stop
+
+function stop() {
+    setRunning(false);
+}
+
+Sets running to false, stopping the stopwatch without resetting the elapsed time.
+
+Reset
+
+
+function reset() {
+    setElapsedtime(0);
+    setRunning(false);
+}
+
+5. Time Formatting
+
+function formatTime() {
+    let hour = Math.floor(elapsedTime / (1000 * 60 * 60));
+    let min = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    let sec = Math.floor((elapsedTime / 1000) % 60);
+    return `${hour}: ${min} : ${sec}`;
+}
+
+
+Converts elapsedTime from milliseconds to a human-readable format (hh:mm:ss).
