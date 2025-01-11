@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.add {
+  background-color: #4caf50; /* Green background */
+  color: rgb(59, 39, 39); /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 20px;
+}
+
+.add:hover {
+  background-color: #0e7f2e;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #971717;
+}
+
+.task-name {
+  height: 30px;
+  width: 50vh;
+}
+
+.delete,
+.moveup {
+  background-color: #4448bc; /* Green background */
+  color: rgb(17, 18, 22); /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 20px;
+}
+
+.delete:hover,
+.moveup:hover {
+  background-color: #243784; /* Green background */
+  color: rgb(24, 18, 18); /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 20px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.row-name {
+  flex: 1;
+}
