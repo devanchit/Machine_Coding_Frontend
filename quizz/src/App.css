@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.option{
+  display: block;
+  background-color: rgb(7, 74, 132);
+  margin: 20px 45px 20px 45px;
+  height: 50px;
+  text-align: center;
+  padding-top: 22px;
+  border-radius: 20px;
+}
+
+.question{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin: 20px 45px 20px 45px;
+  height: 50px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(33, 56, 11);
+  padding-top: 22px;
+  border-radius: 20px;
+}
+
+.option:hover{
+  display: block;
+  background-color: rgb(22, 112, 190);
+}
+
+.next{
+  background-color: rgb(9, 103, 11);
+  height: 50px;
+  padding-top: 6px;
+  border-radius: 20px;
+  font-size: large;
+  width : 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
