@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+
+.question{
+  background-color: rgb(34, 44, 24);
+  color: rgb(209, 223, 223);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 50px 50px 50px 50px;
+  height: 50px;
+  padding-top: 22px;
+  border-radius: 20px;
+}
+
+.option{
+  display: block;
+  background-color: rgb(3, 17, 49);
+  color: rgb(173, 207, 187);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 50px 50px 50px 50px;
+  height: 50px;
+  padding-top: 22px;
+  border-radius: 20px;
+}
+
+.next{
+  background-color: rgb(3, 17, 49);
+  color: rgb(144, 174, 159);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 50px 50px 50px 50px;
+  height: 50px;
+  padding-top: 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.selected{
+  display: block;
+  background-color: rgb(3, 17, 49);
+  color: rgb(13, 151, 43);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 50px 50px 50px 50px;
+  height: 50px;
+  padding-top: 22px;
+  border-radius: 20px;
+}
+
+.enable{
+  color:rgb(186, 197, 197);
+  background-color: rgb(7, 81, 23);
+}
+
+
+.disable{
+  cursor: not-allowed;
+  background-color: rgb(59, 60, 61);
+  color: rgb(239, 228, 228);
+}
