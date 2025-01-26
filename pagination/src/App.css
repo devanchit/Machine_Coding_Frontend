@@ -1,0 +1,53 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping when more than 5 items are present */
+  gap: 10px; /* Adds spacing between images */
+  justify-content: space-between; /* Distributes space evenly */
+  width: 700px;
+  max-width: 100%; /* Makes the container responsive */
+}
+
+img {
+  height: 150px;
+  width: calc(
+    20% - 10px
+  ); /* Ensures each image takes 20% of the row with gap */
+  border-radius: 20px;
+  object-fit: cover; /* Keeps image aspect ratio */
+}
+
+.button-container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 700px;
+}
+
+.pageno {
+  background-color: rgb(61, 116, 10);
+  color: rgb(222, 214, 214);
+  height: 20px;
+  padding: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+  border: 2px solid rgb(16, 15, 15);
+  border-radius: 8px;
+}
+
+.pageno:hover {
+  background-color: rgb(82, 156, 12);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  justify-content: space-evenly;
+}
+
+.active {
+  background-color: white;
+  color: rgb(52, 94, 11);
+  border: 2px solid rgb(95, 148, 42);
+}
