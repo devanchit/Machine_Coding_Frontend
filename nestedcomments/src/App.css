@@ -1,0 +1,46 @@
+.comment-container{
+  display: flex;
+}
+
+.comment{
+  margin:  20px  0 20px 20px;
+}
+
+button{
+  background-color: rgb(13, 61, 143);
+  color: rgb(211, 218, 225);
+  margin:  0 0 20px 20px;
+  height: 40px;
+  width: 70px;
+  border-radius: 6px;
+}
+
+
+.comment-action button{
+  background-color: rgb(13, 61, 143);
+  color: rgb(211, 218, 225);
+  margin:  0 0 20px 20px;
+  height: 40px;
+  width: 70px;
+  border-radius: 6px;
+}
+
+.post-reply{
+  width: 80%;
+}
+
+.reply-box-container{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.post-reply-btn{
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.nested-comment{
+  margin-left: 50px;
+  border-left: 1px solid;
+}
